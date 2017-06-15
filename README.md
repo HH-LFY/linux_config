@@ -8,3 +8,7 @@ ubuntu 17.04
 ~/.bashrc
 ~/.vimrc
 ```
+#使用方法
+```
+bash bash start_add_config.sh
+```
