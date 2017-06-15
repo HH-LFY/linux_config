@@ -9,7 +9,7 @@ add_profile_config() {
 
 add_bashrc_config() {
     echo "开始配置 $1"
-    echo -e $2 >> ~/.bashrc
+    echo $2 >> ~/.bashrc
     source ~/.bashrc
     echo "$1 配置完成"
 }
@@ -17,5 +17,11 @@ add_bashrc_config() {
 config_ps='PS1="[\[\e[32m\]#\##\[\e[31m\]\u@\[\e[36m\]\h \[\e[35m\]\w \[\e[33m\]\t]\$\[\e[m\] "'
 add_profile_config "命令行颜色" "$config_ps"
 
-config_bashrc='alias ll="ls -al"\nalias gp="grep --color"\n'
-add_bashrc_config "alias" "$config_bashrc"
+config_bashrc_ll='alias ll="ls -al"'
+add_bashrc_config "ll" "$config_bashrc_ll"
+
+config_bashrc_grep='alias grep="grep --color"'
+add_bashrc_config "grep" "$config_bashrc_grep"
+
+cp vimrc ~/.vimrc
+echo "替换vimrc完成"
