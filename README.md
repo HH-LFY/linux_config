@@ -10,5 +10,5 @@ ubuntu 17.04
 ```
 # 使用方法
 ```
-bash bash start_add_config.sh
+bash start_add_config.sh
 ```
