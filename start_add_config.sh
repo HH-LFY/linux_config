@@ -23,5 +23,8 @@ add_bashrc_config "ll" "$config_bashrc_ll"
 config_bashrc_grep='alias grep="grep --color"'
 add_bashrc_config "grep" "$config_bashrc_grep"
 
+config_bashrc_gp='alias gp="ps -ef | grep --color "'
+add_bashrc_config "gp" "$config_bashrc_gp"
+
 cp vimrc ~/.vimrc
 echo "替换vimrc完成"
