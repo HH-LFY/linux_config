@@ -41,3 +41,7 @@ add_inputrc_config "input2" "$config_input_2"
 
 cp vimrc ~/.vimrc
 echo "替换vimrc完成"
+
+apt-get update
+
+apt-get install git
